@@ -1,0 +1,26 @@
+{
+  "name": "hablemosdemarcas_home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel <your entry file>",
+    "build": "parcel build <your entry file>"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@marlonmarcello/snowpack-plugin-pug": "^1.0.3",
+    "@snowpack/plugin-optimize": "^0.2.13",
+    "@snowpack/plugin-postcss": "^1.2.2",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^14.0.1",
+    "postcss-nested": "^5.0.5",
+    "snowpack": "^3.3.3",
+    "tailwindcss": "^2.1.1"
+  }
+}
