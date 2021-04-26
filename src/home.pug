@@ -1,5 +1,5 @@
 doctype html
-html
+html(lang="es")
   head
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
@@ -14,132 +14,131 @@ html
     meta(property='og:site_name' content='BrandEc - Blog de Mauricio Arboleda Acosta')
     meta(name='twitter:card' content='summary')
     meta(name='twitter:site' content='@brandec_')
-    link(rel='stylesheet' href='css/home.css')
+    link(rel="stylesheet", href="css/home.css")
   body
     header
       .topbar
         a.topbar__text(href="https://www.hablemosdemarcas.com/sitemap.xml") Mapa del Sitio
         a.topbar__text(href="#") Terminos y Condiciones
         a.topbar__text(href="https://www.hablemosdemarcas.com/politica-de-privacidad-brandec/") Política de Privacidad 
-        a.topbar__icon(href="https://www.facebook.com/brandecuador/")
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M22,12c0-5.52-4.48-10-10-10S2,6.48,2,12c0,4.84,3.44,8.87,8,9.8V15H8v-3h2V9.5C10,7.57,11.57,6,13.5,6H16v3h-2 c-0.55,0-1,0.45-1,1v2h3v3h-3v6.95C18.05,21.45,22,17.19,22,12z"/></svg>
-        a.topbar__icon(href="https://twitter.com/BrandEc_")
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
-        a.topbar__icon(href="https://www.instagram.com/brandec_branding/")
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-        a.topbar__icon(href="https://open.spotify.com/show/4Mf1DFJnj7rIMgQbHM1Dpq")
-          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.098 10.638c-3.868-2.297-10.248-2.508-13.941-1.387-.593.18-1.22-.155-1.399-.748-.18-.593.154-1.22.748-1.4 4.239-1.287 11.285-1.038 15.738 1.605.533.317.708 1.005.392 1.538-.316.533-1.005.709-1.538.392zm-.126 3.403c-.272.44-.847.578-1.287.308-3.225-1.982-8.142-2.557-11.958-1.399-.494.15-1.017-.129-1.167-.623-.149-.495.13-1.016.624-1.167 4.358-1.322 9.776-.682 13.48 1.595.44.27.578.847.308 1.286zm-1.469 3.267c-.215.354-.676.465-1.028.249-2.818-1.722-6.365-2.111-10.542-1.157-.402.092-.803-.16-.895-.562-.092-.403.159-.804.562-.896 4.571-1.045 8.492-.595 11.655 1.338.353.215.464.676.248 1.028zm-5.503-17.308c-6.627 0-12 5.373-12 12 0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12z"/></svg>
-        a.topbar__icon(href="https://www.youtube.com/channel/UCwSNxIEXshDYj9UjO1xDYTw")
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+        a.topbar__icon(href="https://www.facebook.com/brandecuador/", aria-label="BrandEC Facebook Page")
+          svg(xmlns='http://www.w3.org/2000/svg', height='24px', viewbox='0 0 24 24', width='24px', fill='#000000')
+            rect(fill='none', height='24', width='24')
+            path(d='M22,12c0-5.52-4.48-10-10-10S2,6.48,2,12c0,4.84,3.44,8.87,8,9.8V15H8v-3h2V9.5C10,7.57,11.57,6,13.5,6H16v3h-2 c-0.55,0-1,0.45-1,1v2h3v3h-3v6.95C18.05,21.45,22,17.19,22,12z')
+        a.topbar__icon(href="https://twitter.com/BrandEc_", aria-label="BrandEC Twitter Page")
+          svg(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewbox='0 0 24 24')
+            path(d='M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z')
+        a.topbar__icon(href="https://www.instagram.com/brandec_branding/", aria-label="BrandEC Instagram Page")
+          svg(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewbox='0 0 24 24')
+            path(d='M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z')
+        a.topbar__icon(href="https://open.spotify.com/show/4Mf1DFJnj7rIMgQbHM1Dpq", aria-label="BrandEC Spotify Podcast")
+          svg(width='24', height='24', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 24 24')
+            path(d='M19.098 10.638c-3.868-2.297-10.248-2.508-13.941-1.387-.593.18-1.22-.155-1.399-.748-.18-.593.154-1.22.748-1.4 4.239-1.287 11.285-1.038 15.738 1.605.533.317.708 1.005.392 1.538-.316.533-1.005.709-1.538.392zm-.126 3.403c-.272.44-.847.578-1.287.308-3.225-1.982-8.142-2.557-11.958-1.399-.494.15-1.017-.129-1.167-.623-.149-.495.13-1.016.624-1.167 4.358-1.322 9.776-.682 13.48 1.595.44.27.578.847.308 1.286zm-1.469 3.267c-.215.354-.676.465-1.028.249-2.818-1.722-6.365-2.111-10.542-1.157-.402.092-.803-.16-.895-.562-.092-.403.159-.804.562-.896 4.571-1.045 8.492-.595 11.655 1.338.353.215.464.676.248 1.028zm-5.503-17.308c-6.627 0-12 5.373-12 12 0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12z')
+        a.topbar__icon(href="https://www.youtube.com/channel/UCwSNxIEXshDYj9UjO1xDYTw", aria-label="BrandEC Youtube Channel")
+          svg(xmlns='http://www.w3.org/2000/svg', width='24', height='24', viewbox='0 0 24 24')
+            path(d='M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z')
       .mainbar
-        #main-logo.logo-header
-          include ./images/logo.svg
-        nav.navbar(role="navigation")
-          p#hamburger-btn.menu-button menu
-          ul#menu.navbar__list
+        a(href="https://www.hablemosdemarcas.com/", aria-label="BrandEC Logo")#main-logo.logo-header
+          include ./images/logo.pug
+        div#hamburger-btn.menu-button
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        nav#menu.navbar(role="navigation")
+          ul.navbar__list
             li.navbar__list__item
-              a(href="https://www.hablemosdemarcas.com/")  Inicio
+              a(href="https://www.hablemosdemarcas.com/") Inicio
             li.navbar-dropdown.navbar__list__item Sobre BrandEc
               ul.navbar__list.navbar__list-dropdown.dropdown
                 li.navbar__list__item
-                  a(href="https://www.hablemosdemarcas.com/quien-es-mauricio-arboleda-acosta/")  Conoce a Mauricio Arboleda
+                  a(href="https://www.hablemosdemarcas.com/quien-es-mauricio-arboleda-acosta/") Conoce a Mauricio Arboleda
                 li.navbar__list__item
                   a(href="https://www.hablemosdemarcas.com/conferencias-de-mauricio-arboleda-acosta/")  Conferencias
                 li.navbar__list__item
-                  a(href="https://www.hablemosdemarcas.com/entrevistas-mauricio-arboleda-acosta/")  Entrevistas
+                  a(href="https://www.hablemosdemarcas.com/entrevistas-mauricio-arboleda-acosta/") Entrevistas
                 li.navbar__list__item
-                  a(href="https://www.hablemosdemarcas.com/webinars-brandec/")  Webinars
+                  a(href="https://www.hablemosdemarcas.com/webinars-brandec/") Webinars
             li.navbar__list__item
-              a(href="https://www.hablemosdemarcas.com/servicios/")  Servicios
+              a(href="https://www.hablemosdemarcas.com/servicios/") Servicios
             li.navbar__list__item
-              a(href="https://www.hablemosdemarcas.com/hablemos-de-tu-marca/")  Hablemos de tu marca
+              a(href="https://www.hablemosdemarcas.com/hablemos-de-tu-marca/") Hablemos de tu marca
     hero.w-full
       picture
-        img(srcset="images/mauricio-face-01-sm.png 600w, images/mauricio-face-01-md.png 1200w, images/mauricio-face-01-lg.png 2000w" src="images/mauricio-face-01-sm.png", alt="")
+        img(srcset="images/mauricio-face-01-md.png 600w, images/mauricio-face-01.png 1200w" src="images/mauricio-face-01-md.png", alt="Foto fronal de Mauricio Arboleda Acosta", width="340", height="300")
       .hero-text-box 
         p Yo hablo de <strong>marcas,</strong> comunicación y <strong>marketing digital</strong>
         p Mauricio Arboleda A.
         p Dedicado al branding y comunicación
-    section.posts-section
+    section.posts-section.pt-10
       h3.section__tille Últimos posts
       .post__preview__list
         a(href="https://www.hablemosdemarcas.com/herramientas-de-almacenamiento/").post__preview
           picture 
-            img(src="images/post-herramientas-informacion.jpeg", alt="", srcset="")
+            img(src="images/post-herramientas-informacion.jpeg", alt="Usuario utilizando Google Analytics", width="343", height="248")
           .post_tittle Herramientas de almacenamiento de información
           .post_description Herramientas de almacenamiento para trabajar en equipo y de manera segura sin perder tus archivos. Con la llegada del internet cada día estamos generando información, la cual en ocasiones nos olvidamos de guardar.
         a(href="https://www.hablemosdemarcas.com/herramientas-gratuitas-seo/").post__preview
           picture 
-            img(src="images/glenn-carstens-peters-npxXWgQ33ZQ-unsplash1-768x511.jpeg", alt="", srcset="")
+            img(src="images/glenn-carstens-peters-npxXWgQ33ZQ-unsplash1-768x511.jpeg", alt="Usuario usando macbook", width="343", height="248")
           .post_tittle Herramientas gratuitas para SEO
           .post_description Muestra un ranking de 10 herramientas gratuitas para SEO que te ayudarán a posicionar tu web. Este artículo no es para enseñar a manejar herramientas o mucho menos un curso gratuito de SEO.
         a(href="https://www.hablemosdemarcas.com/estadisticas-digitales-ecuador-2021/").post__preview
           picture 
-            img(src="images/rodion-kutsaev-610x406.jpeg", alt="", srcset="")
+            img(src="images/rodion-kutsaev-610x406.jpeg", alt="Smartphone en manos con filtro difuminado", width="343", height="248")
           .post_tittle Estadísticas digitales Ecuador 2021 por Datareportal
           .post_description Estadísticas digitales Ecuador 2021 es un estudio realizado por Datareportal acerca de las redes sociales y el e-commerce. Cada año Datareportal realiza estudios sobre los medios digitales de cada país, en esta ocasión vamos a compartir algunos datos.'
     section.services-section
       h3.section__tille Servicios
       .services__preview__list
         .service_preview
-          .service_tittle What is Lorem Ipsum?
-          .service_description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.
+          .service_tittle Branding Neuroemocional
+          .service_description Mezclamos investigación de mercados, psicología, neurociencia, antropología, sociología, las cuales permiten tener una mejor idea de lo que el consumidor desea escuchar y comprar.
         .service_preview
-          .service_tittle What is Lorem Ipsum?
-          .service_description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.
+          .service_tittle Branding en el medio digital
+          .service_description Las marcas se han vuelto omnipresentes y estar en el internet es necesario, no solo para entender y escuchar a tu consumidor, sino más bien conocer el embudo que lleva al cliente a adquirir algun producto o servicio.
         .service_preview
-          .service_tittle What is Lorem Ipsum?
-          .service_description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.
-    section.expirence-section
-      h3.section__tille Experiencia
-      .expirence__list
-        picture 
-          img(src="https://via.placeholder.com/100", alt="", srcset="")
-        picture 
-          img(src="https://via.placeholder.com/100", alt="", srcset="")
-        picture 
-          img(src="https://via.placeholder.com/100", alt="", srcset="")
-        picture 
-          img(src="https://via.placeholder.com/100", alt="", srcset="")
-        picture 
-          img(src="https://via.placeholder.com/100", alt="", srcset="")
-        picture 
-          img(src="https://via.placeholder.com/100", alt="", srcset="")
-        picture 
-          img(src="https://via.placeholder.com/100", alt="", srcset="")
-        picture 
-          img(src="https://via.placeholder.com/100", alt="", srcset="")
-        picture 
-          img(src="https://via.placeholder.com/100", alt="", srcset="")
-        picture 
-          img(src="https://via.placeholder.com/100", alt="", srcset="")
+          .service_tittle Marketing en el medio digital
+          .service_description La estrategia digital de la marca debe de estar alineada con la estrategia de la marca global, llevar esto acabo se necesita de tiempo y de utilizar los recursos a la mano para su implementación.
     section.podcasts-section
       h3.section__tille Podcast
       .podcasts__preview__list
         .podcast_preview
-          .podcast_tittle What is Lorem Ipsum?
-          .podcast_description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.
-          a.podcast_button
-            span Escuchar aquí
-            img(src="https://via.placeholder.com/40", alt="", srcset="")
+          .podcast_tittle 08. La importancia de un mentor
+          .podcast_description En el Ecuador, no estamos acostumbrados a una mentoría, podríamos considerar que estamos contando nuestro emprendimiento a una persona que va a copiar nuestro negocio.
+          a(href="https://open.spotify.com/episode/5bhxSyCYaKRNHEf5fIsMPN?si=22UhgVyWTTqnhFt_Ma8okA", aria-label="Escuchar Podcast").podcast_button
+            span Escuchar
+            svg(xmlns='http://www.w3.org/2000/svg', height='24px', viewbox='0 0 24 24', width='24px', fill='#000000')
+              path(d='M0 0h24v24H0V0z', fill='none')
+              path(d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z')
         .podcast_preview
-          .podcast_tittle What is Lorem Ipsum?
-          .podcast_description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.
-          a.podcast_button
-            span Escuchar aquí
-            img(src="https://via.placeholder.com/40", alt="", srcset="")
+          .podcast_tittle 07. 5 pasos para crear procesos en mi emprendimiento
+          .podcast_description Uno de los tantos inconvenientes que tenemos para emprender, es que deseamos ser todologos en el negocio pero realmente necesitamos ayuda. En este podcast hablo acerca de 5 pasos para crear procesos y los beneficios que obtengo para mi empresa.
+          a(href="https://open.spotify.com/episode/6ykrXwBZRG8oQig1PUcz1Y?si=cacP8L29QZyVUuZvROUXxw", aria-label="Escuchar Podcast").podcast_button
+            span Escuchar
+            svg(xmlns='http://www.w3.org/2000/svg', height='24px', viewbox='0 0 24 24', width='24px', fill='#000000')
+              path(d='M0 0h24v24H0V0z', fill='none')
+              path(d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z')
         .podcast_preview
-          .podcast_tittle What is Lorem Ipsum?
-          .podcast_description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.
-          a.podcast_button
-            span Escuchar aquí
-            img(src="https://via.placeholder.com/40", alt="", srcset="")
-    section.cta-section
-      div
-        a(href="https://www.hablemosdemarcas.com/hablemos-de-tu-marca/").cta__tille ¿Hablamos de tu marca?
+          .podcast_tittle 06. Herramientas gratuitas para posicionamiento web
+          .podcast_description Tu emprendimiento necesito posiconamiento en los búsquedas, puedes aprovecharlos con las siguientes 10 herramientas gratuitas que te recomiendo.
+          a(href="https://open.spotify.com/episode/2C9zqYnsiaosYXgkgUKhfY?si=qcgSCnzrQR6Unb0-ZbSONQ", aria-label="Escuchar Podcast").podcast_button
+            span Escuchar
+            svg(xmlns='http://www.w3.org/2000/svg', height='24px', viewbox='0 0 24 24', width='24px', fill='#000000')
+              path(d='M0 0h24v24H0V0z', fill='none')
+              path(d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z')
     footer.footer
-      p.rights ® Copyrights Mauricio Arboleda Acosta. Todos los derechos reservados. Para usar el contenido de este blog póngase en contacto con el autor.
+      .footer__menu
+        ul.footer__list
+          li.footer__list__item Sobre BrandEC 
+            ul
+              li.footer__list__item
+                a(href="https://www.hablemosdemarcas.com/quien-es-mauricio-arboleda-acosta/") Conoce a Mauricio Arboleda
+              li.footer__list__item
+                a(href="https://www.hablemosdemarcas.com/conferencias-de-mauricio-arboleda-acosta/")  Conferencias
+              li.footer__list__item
+                a(href="https://www.hablemosdemarcas.com/entrevistas-mauricio-arboleda-acosta/") Entrevistas
+              li.footer__list__item
+                a(href="https://www.hablemosdemarcas.com/webinars-brandec/") Webinars
+        a(href="https://www.hablemosdemarcas.com/", aria-label="BrandEC Logo")#footer-logo
+            include ./images/logo.pug
+      p.rights ® Copyrights BrandEC - Hablemos de marcas. Todos los derechos reservados. Para usar el contenido de este blog póngase en contacto con el autor.
       script.
-        document.getElementById('hamburger-btn').addEventListener('click', function(){
-          document.getElementById('menu').classList.toggle('menu-active');
-        });
+        document.getElementById('hamburger-btn').addEventListener('click', function(){document.getElementById('menu').classList.toggle('menu-active');});

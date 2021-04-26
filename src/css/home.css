@@ -1,11 +1,11 @@
 @import '../../public/global.css';
 
-/* html {
-    background-color: var(--html-backgroud-color);
-} */
+html {
+    background-color: var(--color-white-100);
+}
 
 body {
-    @apply md:container md:mx-auto;
+    @apply md:container md:mx-auto shadow-2xl;
 }
 
 header{
@@ -33,88 +33,86 @@ header{
     }
     
     .mainbar {
-        @apply md:flex md:flex-row mx-4 my-4 md:mx-20 justify-between;
+        @apply flex flex-row flex-wrap mx-4 my-4 md:mx-20 justify-between;
 
         .logo-header {
-            @apply w-52;
+            @apply w-52 place-self-start;
         }
-    }
-    nav.navbar {
 
-
-
-        #menu {
-            @apply hidden lg:block;
-        }
-        
-        .menu-button {
-            @apply md:hidden;
+        #hamburger-btn {
+            @apply w-10 lg:hidden;
         }
 
         .menu-active {
             display: block !important;
+            /* position: absolute; */
         }
+    
+        nav.navbar {
+            @apply hidden lg:block;
 
-        a {
-            color: var(--color-black);
-            text-decoration: none;
-          }
-          
-          nav {
-            font-family: monospace;
-          }
-          
-          ul {
-            /* background: darkorange; */
-            list-style: none;
-            margin: 0;
-            padding-left: 0;
-          }
-          
-          li {
-            color: var(--color-black);
-            /* background: darkorange; */
-            display: block;
-            float: left;
-            padding: 1rem;
-            position: relative;
-            text-decoration: none;
-            transition-duration: 0.5s;
-            @apply text-lg;
-          }
-          
-          li:hover {
-            background: hsl(0, 0%, 80%);
-            cursor: pointer;
-          }
-          
-          ul li ul {
-            background: hsl(0, 0%, 100%);;
-            visibility: hidden;
-            opacity: 0;
-            min-width: 5rem;
-            position: absolute;
-            transition: all 0.5s ease;
-            margin-top: 1rem;
-            left: 0;
-            display: none;
-            @apply text-sm;
-          }
-          
-          ul li:hover > ul,
-          ul li ul:hover {
-            visibility: visible;
-            opacity: 1;
-            display: block;
-            @apply text-sm;
-          }
-          
-          ul li ul li {
-            clear: both;
-            width: 100%;
-            padding: 0.5rem;
-            @apply text-sm;
-          }
+            a {
+                color: var(--color-black);
+                text-decoration: none;
+            }
+            
+            nav {
+                font-family: monospace;
+            }
+            
+            ul {
+                /* background: darkorange; */
+                list-style: none;
+                margin: 0;
+                padding-left: 0;
+                @apply flex flex-col lg:block;
+            }
+            
+            li {
+                color: var(--color-black);
+                /* background: darkorange; */
+                display: block;
+                float: left;
+                padding: 1rem;
+                position: relative;
+                text-decoration: none;
+                transition-duration: 0.5s;
+                @apply text-lg;
+            }
+            
+            li:hover {
+                background: hsl(0, 0%, 80%);
+                cursor: pointer;
+            }
+            
+            ul li ul {
+                background: hsl(0, 0%, 100%);;
+                visibility: hidden;
+                opacity: 0;
+                min-width: 5rem;
+                /* position: absolute; */
+                transition: all 0.5s ease;
+                margin-top: 1rem;
+                left: 0;
+                display: none;
+                @apply text-sm lg:absolute relative;
+            }
+            
+            ul li:hover > ul,
+            ul li ul:hover {
+                visibility: visible;
+                opacity: 1;
+                display: block;
+                @apply text-sm;
+            }
+            
+            ul li ul li {
+                clear: both;
+                width: 100%;
+                padding: 0.5rem;
+                @apply text-sm;
+            }
+        }
     }
 
 }
@@ -153,7 +151,7 @@ hero {
 section {
 
     h3.section__tille {
-        @apply text-3xl font-bold pt-12 pb-4 border-b-2 border-black;
+        @apply text-3xl font-bold border-b-2 border-black;
     }
 
 }
@@ -236,38 +234,60 @@ section.podcasts-section {
             }
 
             a.podcast_button {
-                @apply flex flex-row text-xs justify-end items-center;
+                @apply flex flex-row text-sm md:text-xs justify-end items-center p-4;
 
                 span {
                     @apply px-2;
                 }
 
-                img {
-                    @apply rounded-full;
+                svg {
+                    @apply w-8 h-8;
                 }
             }
         }
     }
 }
 
-section.cta-section {
-    @apply mt-8 py-8 grid place-items-center;
+footer {
     background-color: var(--color-grey-1);
 
-    a {
-        /* background-color: darkgreen ; */
+    .footer__menu {
         color: var(--color-white-100);
-        /* font-size: 2.5rem; */
-        @apply flex items-center justify-center px-8 py-3 underline text-2xl md:text-4xl font-medium rounded-md md:py-4 md:px-10;
-    }
-}
+        @apply flex flex-row py-8 px-4 md:px-20 justify-between;
 
-footer {
-    @apply py-4 md:py-8;
-    background-color: var(--color-grey-3);
+        ul {
+
+            li {
+                @apply text-xl font-bold;
+
+                ul {
+
+                    li {
+                        @apply text-base font-normal;
+                    }
+                }
+            }
+        }
+
+        .footer__list {
+            @apply w-full md:w-1/3;
+
+        }
+    }
+
+    #footer-logo {
+
+        @apply md:block w-40 md:w-40;
+
+        svg {
+            color: var(--color-white-100);
+            fill: var(--color-white-100);
+        }
+    }
 
     p.rights {
-        @apply mx-4 md:mx-20 text-xs italic;
+        background-color: var(--color-grey-3);
         color: var(--color-white-100);
+        @apply p-4 md:px-20 text-xs italic;
     }
 }

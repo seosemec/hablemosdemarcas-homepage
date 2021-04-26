@@ -15,6 +15,7 @@
     "@snowpack/plugin-optimize": "^0.2.13",
     "@snowpack/plugin-postcss": "^1.2.2",
     "autoprefixer": "^10.2.5",
+    "minify": "^7.0.1",
     "postcss": "^8.2.10",
     "postcss-cli": "^8.3.1",
     "postcss-cssnext": "^3.1.0",

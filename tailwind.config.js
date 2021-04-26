@@ -2,7 +2,7 @@ module.exports = {
     mode: 'jit',
     purge: [
       './src/**/*.pug', 
-      './public/**/*.html', 
+      './build/**/*.html', 
       './src/**/*.{js,jsx,ts,tsx,vue}'
     ],
     // specify other options here
