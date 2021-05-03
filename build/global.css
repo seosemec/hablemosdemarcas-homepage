@@ -592,7 +592,7 @@ video {
     --color-green: hsl(135, 100%, 50%);
     
     /* ELEMENTS */
-    --html-background: var(--color-grey-1);
+    --html-background: var(--color-black-0);
     --body-background: var(--color-white-100);
     --text-color: var(--color-black-0);
 

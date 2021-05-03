@@ -1,11 +1,7 @@
 @import '../../public/global.css';
 
-html {
-    background-color: var(--color-white-100);
-}
-
 body {
-    @apply md:container md:mx-auto shadow-2xl;
+    @apply md:container md:mx-auto shadow-2xl md:my-4;
 }
 
 header{
