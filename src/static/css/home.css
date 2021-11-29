@@ -1,4 +1,4 @@
-@import '../../public/global.css';
+@import '../../../public/global.css';
 
 body {
     @apply md:container md:mx-auto shadow-2xl md:my-4;

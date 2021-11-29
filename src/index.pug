@@ -12,10 +12,10 @@ html(lang="es")
     meta(property='og:description' content='Primer blog sobre branding y comunicación en el Ecuador fundado por Mauricio Arboleda Acosta')
     meta(property='og:url' content='https://www.hablemosdemarcas.com/')
     meta(property='og:site_name' content='BrandEc - Blog de Mauricio Arboleda Acosta')
-    meta(property='og:image' content='images/logo-rectangle.jpeg')
+    meta(property='og:image' content='static/images/logo-rectangle.jpeg')
     meta(property='twitter:card' content='summary')
     meta(property='twitter:site' content='@brandec_')
-    meta(property='twitter:image' content='images/logo-rectangle.jpeg')
+    meta(property='twitter:image' content='static/images/logo-rectangle.jpeg')
     <!-- Google Analytics -->
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -25,8 +25,8 @@ html(lang="es")
 
       ga('create', 'UA-96543334-1', 'auto');
       ga('send', 'pageview');
-    link(rel="shortcut icon", type="image/jpg", href="images/brandec_icon-32x32.png")
-    link(rel="stylesheet", href="css/home.css")
+    link(rel="shortcut icon", type="image/jpg", href="static/images/brandec_icon-32x32.png")
+    link(rel="stylesheet", href="static/css/home.css")
   body
     header
       .topbar
@@ -50,7 +50,7 @@ html(lang="es")
             path(d='M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z')
       .mainbar
         a(href="https://www.hablemosdemarcas.com/", aria-label="BrandEC Logo")#main-logo.logo-header
-          include ./images/logo.pug
+          include ./static/images/logo.pug
         div#hamburger-btn.menu-button
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
         nav#menu.navbar(role="navigation")
@@ -75,7 +75,7 @@ html(lang="es")
               a(href="https://www.hablemosdemarcas.com/hablemos-de-tu-marca/") Hablemos de tu marca
     hero.w-full
       picture
-        img(srcset="images/mauricio-face-01-md.png 600w, images/mauricio-face-01.png 1200w" src="images/mauricio-face-01-md.png", alt="Foto fronal de Mauricio Arboleda Acosta", width="340", height="300")
+        img(srcset="static/images/mauricio-face-01-md.png 600w, static/images/mauricio-face-01.png 1200w" src="static/images/mauricio-face-01-md.png", alt="Foto fronal de Mauricio Arboleda Acosta", width="340", height="300")
       .hero-text-box 
         p Yo hablo de <strong>marcas,</strong> comunicación y <strong>marketing digital</strong>
         p Mauricio Arboleda A.
@@ -85,17 +85,17 @@ html(lang="es")
       .post__preview__list
         a(href="https://www.hablemosdemarcas.com/libros-de-marketing-digital/").post__preview
           picture 
-            img(src="images/libros_mkt_digital_post_reduce-2-768x768.jpeg", alt="Mano agarrando libros en repisa", width="343", height="343")
+            img(src="static/images/libros_mkt_digital_post_reduce-2-768x768.jpeg", alt="Mano agarrando libros en repisa", width="343", height="343")
           .post_tittle Libros de marketing digital
           .post_description Existe mucho material para hablar de marketing digital pero antes de empezar sobre ese tema, debemos de entender que el marketing es el origen de todo.
         a(href="https://www.hablemosdemarcas.com/que-es-buyer-persona-y-como-crearlo/").post__preview
           picture 
-            img(src="images/buyer_persona_web-768x768.jpeg", alt="Persona trabajando mientras toma cafe y lee", width="343", height="343")
+            img(src="static/images/buyer_persona_web-768x768.jpeg", alt="Persona trabajando mientras toma cafe y lee", width="343", height="343")
           .post_tittle Buyer Persona: ¿Qué es y cómo crearlo?
           .post_description Cómo te puede ayudar el buyer persona para determinar el cliente ideal que necesitas para tu emprendimiento. Un paso a paso para poder crearlo.
         a(href="https://www.hablemosdemarcas.com/libros-sobre-innovacion-top-10/").post__preview
           picture 
-            img(src="images/libros-sobre-innovacion.jpeg", alt="Sala work from home", width="343", height="343")
+            img(src="static/images/libros-sobre-innovacion.jpeg", alt="Sala work from home", width="343", height="343")
           .post_tittle Libros sobre innovación: 10 libros que todo emprendedor debe leer.
           .post_description Necesitamos tener presente que la innovación no nace de la noche a la mañana, sino que es un proceso en el cual estamos involucrados para hacer mejor las cosas.
     section.services-section
@@ -151,7 +151,7 @@ html(lang="es")
               li.footer__list__item
                 a(href="https://www.hablemosdemarcas.com/webinars-brandec/") Webinars
         a(href="https://www.hablemosdemarcas.com/", aria-label="BrandEC Logo")#footer-logo
-            include ./images/logo.pug
+            include ./static/images/logo.pug
       p.rights ® Copyrights BrandEC - Hablemos de marcas. Todos los derechos reservados. Para usar el contenido de este blog póngase en contacto con el autor.
       script.
         document.getElementById('hamburger-btn').addEventListener('click', function(){document.getElementById('menu').classList.toggle('menu-active');});
